@@ -91,7 +91,6 @@ a {
 }
 
 .options-container{
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     row-gap: 10px;
@@ -108,7 +107,6 @@ main {
 h2 {
     padding: 15px 0px;
     margin-bottom: 20px;
-    text-align: center;
     width: 100%;
 }
 
@@ -131,9 +129,16 @@ section {
     align-items: center;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
 fieldset {
     padding: 20px;
 }
+
 .encaminhamento-neurodivergencia{
     width: 50%;
 
@@ -168,6 +173,7 @@ fieldset {
     background-color: white;
     padding: 25px;
     border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.5);
 }
 
 #encaminhamento-autismo h1{
