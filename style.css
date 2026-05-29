@@ -25,6 +25,24 @@ header{
     gap: 20px;
 }
 
+nav {
+    background-color: #2581a5;
+    color: white;
+    padding: 0.5rem;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+    display: block;
+}
+
 .row-container {
     display: flex;
     gap: 20px;
@@ -46,6 +64,13 @@ header{
     justify-content: space-between;
 }
 
+.space-arounded{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .centered {
     display: flex;
     flex-direction: row;
@@ -60,6 +85,12 @@ main {
     padding: 20px;
 }
 
+#encaminhamento-autismo{
+    background-image: url('img/autism-puzzle.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 h2 {
     padding: 15px;
     border-bottom: 2px solid #2581a5;
@@ -67,31 +98,48 @@ h2 {
     text-align: center;
 }
 
+h3{
+    margin-bottom: 5px;
+}
+
 p {
     line-height: 1.6;
     font-size: 1.1rem;
-}
-nav {
-    background-color: #2581a5;
-    color: white;
-    padding: 0.5rem;
-}
-ul {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
+    margin-bottom: 30px;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    transition: 0.3s ease;
-    display: inline-block;
+section {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 a:hover {
     transform: scale(1.2);
 }
+
+.encaminhamento-neurodivergencia{
+    width: 100%;
+
+    aspect-ratio: 1/1;
+}
+
+.encaminhamento-neurodivergencia a{
+    color: rgb(218, 0, 0);
+    background-image: url('img/autism-puzzle.webp');
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encaminhamento-neurodivergencia a h1{
+    color:white
+}
+
 footer {
     background-color: #2581a5;
     color: white;
