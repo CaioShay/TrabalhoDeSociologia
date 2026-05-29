@@ -39,10 +39,17 @@ ul {
 a {
     color: white;
     text-decoration: none;
-    transition: 0.3s ease;
     display: block;
 }
 
+.growing{
+    display: block;
+    transition:0.2s ease;
+}
+
+.growing:hover{
+    transform: scale(1.1);
+}
 .row-container {
     display: flex;
     gap: 20px;
@@ -56,6 +63,11 @@ a {
 .under-bar-white {
     border-bottom: 1px solid white;
 }
+
+.under-bar-blue {
+    border-bottom: 2px solid #2581a5;
+}
+
 
 .beetweened{
     display: flex;
@@ -77,6 +89,14 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.options-container{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+    flex-direction: column;
+}
 h1 {
     font-family: 'Nunito', sans-serif;
 }
@@ -85,17 +105,11 @@ main {
     padding: 20px;
 }
 
-#encaminhamento-autismo{
-    background-image: url('img/autism-puzzle.webp');
-    background-size: cover;
-    background-position: center;
-}
-
 h2 {
-    padding: 15px;
-    border-bottom: 2px solid #2581a5;
+    padding: 15px 0px;
     margin-bottom: 20px;
     text-align: center;
+    width: 100%;
 }
 
 h3{
@@ -111,33 +125,53 @@ p {
 section {
     max-width: 800px;
     margin: 0 auto;
-}
-
-a:hover {
-    transform: scale(1.2);
-}
-
-.encaminhamento-neurodivergencia{
-    width: 100%;
-
-    aspect-ratio: 1/1;
-}
-
-.encaminhamento-neurodivergencia a{
-    color: rgb(218, 0, 0);
-    background-image: url('img/autism-puzzle.webp');
-    background-size: cover;
-    background-position: center;
-
-    height: 100%;
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.encaminhamento-neurodivergencia a h1{
-    color:white
+fieldset {
+    padding: 20px;
+}
+.encaminhamento-neurodivergencia{
+    width: 50%;
+
+    aspect-ratio: 1/1;
+
+    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.5);
+
+    border-radius: 15px;
+}
+
+#encaminhamento-autismo{
+    background-image: url('img/autism-puzzle.webp');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px 5px black;
+    height: 100%;
+}
+
+#encaminhamento-autismo{
+    background-image: url('img/autism-puzzle.webp');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 5px 5px black;
+    height: 100%;
+
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+#encaminhamento-autismo div{
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+#encaminhamento-autismo h1{
+    color: black;
 }
 
 footer {
