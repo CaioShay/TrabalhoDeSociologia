@@ -193,12 +193,12 @@ button {
 }
 
 #encaminhamento-autismo {
-    background-image: url('/img/autism-puzzle.webp');
+    background-image: url('./img/autism-puzzle.webp');
     background-size: cover;
 }
 
 #encaminhamento-tdah {
-    background-image: url('/img/tdah-ribbon.png');
+    background-image: url('./img/tdah-ribbon.png');
     background-size: cover;
 }
 
