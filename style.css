@@ -32,10 +32,11 @@ nav {
     padding: 0.5rem;
 }
 
-ul {
+nav ul {
     list-style-type: none;
     display: flex;
     gap: 1rem;
+    flex-direction: row;
 }
 
 a {
@@ -118,6 +119,20 @@ h1 {
 main {
     flex: 1;
     padding: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    list-style-position: inside;
+}
+
+li::marker {
+     color: #2581a5;
 }
 
 h2 {
