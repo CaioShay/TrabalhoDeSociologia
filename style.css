@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 20px 10px;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -221,6 +243,21 @@ button {
     background-size: cover;
 }
 
+#encaminhamento-tourette {
+    background-image: url('./img/tourette-ribbon.jpg');
+    background-size: cover;
+}
+
+#encaminhamento-dislexia {
+    background-image: url('./img/dislexia-image.webp');
+    background-size: cover;
+}
+
+
+#encaminhamento-discalculia {
+    background-image: url('./img/discalculia-image.png');
+    background-size: cover;
+}
 
 footer {
     background-color: #2581a5;
@@ -237,7 +274,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 30px;
-    border: 1px solid #2581a5;
+    border: 1px solid #1b6886;
     
 }
 
@@ -250,11 +287,13 @@ th {
 th ,td{
     color: white;
     padding: 10px;
-    border: 1px solid #2581a5;
 }
 
 td {
   color: black;
     padding: 10px;
     text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #edfaff;
 }

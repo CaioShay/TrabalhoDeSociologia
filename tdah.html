@@ -14,8 +14,24 @@
         rel="stylesheet">
 
 </head>
+<script defer>
+    function fecharModal() {
+        const modal = document.querySelector('.modal');
+        modal.style.display = 'none';
+    }
+</script>
 
 <body>
+    <div class="modal">
+        <div class="modal-content">
+            <h2>⚠️ Aviso Importante</h2>
+            <p>
+                Este não é um teste real e não possui valor diagnóstico.
+                Os resultados apresentados são apenas para fins educativos e informativos.
+            </p>
+            <button onclick="fecharModal()">Entendi</button>
+        </div>
+    </div>
     <header>
         <div class="row-container space-arounded under-bar-white">
             <h1>Projeto de Sociologia</h1>
