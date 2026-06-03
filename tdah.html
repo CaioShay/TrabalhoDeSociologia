@@ -16,6 +16,7 @@
 </head>
 <script src="modal.js" defer>
 </script>
+<script defer src="test.js"></script>
 
 <body>
     <div class="modal">
@@ -435,8 +436,11 @@
                     </div>
                 </fieldset>
 
-                <button class="growing" type="submit">Enviar</button>
+                <button class="growing" type="button" onclick="result()">Enviar</button>
             </form>
+            <div>
+                <h1 id="h1-result">Resultado: 0</h1>
+            </div>
         </section>
     </main>
     <footer>&copy; 2026 Caio. All rights reserved.</footer>
